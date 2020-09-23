@@ -55,11 +55,32 @@
 
       .buttonbox {
         margin: 0;
-        position: fixed;
-        top: 75%;
-        left: 36%;
+        position: relative;
+        top: 600px;
+        left: 37%;
       }
-
+      .ba {
+        list-style-type: none;
+      }
+      .inline {
+        display:inline;
+      }
+      .header {
+        margin: 0;
+        position: absolute;
+        top: 0px;
+        background-color: #4F4F4F;
+        inline-size: 100%;
+        block-size: 5%;
+        padding-left: 0px;
+        padding-top: 0px;
+      }
+      .homebutton {
+        margin: 0%;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+      }
     </style>
     <meta charset="utf-8">
     <title>
@@ -67,6 +88,9 @@
     </title>
   </head>
   <body>
+    <div class="header homebutton">
+      hello
+    </div>
     <div class="picture">
       <img src="/Users/cameron/github/BOYSOFCINEMA/ROOT/IMG/BOCCOVER.jpg" alt="NO PICTURE FOR YOU" width="414" height="271">
     </div>
@@ -74,8 +98,10 @@
       <h1>BOYS OF CINEMA.</h1>
     </div>
     <div class="buttonbox">
-      <button class="button button1" name="button">SHOP</button>
-      <button class="button button2" name="button">BOOK</button>
+      <ul class="ba">
+        <li class="inline"><button class="button button1" name="button">SHOP</button></li>
+        <li class="inline"><button class="button button2" name="button">BOOK</button></li>
+      </ul>
     </div>
   </body>
 </html>
