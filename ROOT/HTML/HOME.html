@@ -13,7 +13,7 @@
       <img src="/Users/cameron/github/BOYSOFCINEMA/ROOT/IMG/Entry page*.png" alt="NO PICTURE FOR YOU" width="414" height="271">
     </div>
     <div>
-      <h1 onload="setInterval(fontCycle(), 1000)" id="main">
+      <h1 fontFamily="Impact" onload="setInterval(fontCycle(), 300)" id="main">
         BOYS OF CINEMA
       </h1>
     </div>
@@ -26,16 +26,7 @@
 
     <script>
       function fontCycle() {
-        if (document.getElementById("main").style.fontFamily = "impact") {
-          document.getElementById("main").style.fontFamily = "charcoal";
-        }
-        else if (document.getElementById("main").style.fontFamily = "charcoal") {
-          document.getElementById("main").style.fontFamily = "Times new Roman";
-        }
-        else if (document.getElementById("main").style.fontFamily = "Times new Roman") {
-          document.getElementById("main").style.fontFamily = "Impact";
-        }
-        else {}
+          document.getElementById("main").style.fontFamily = "Times, sans serrif, monospace";
       }
     </script>
   </body>
