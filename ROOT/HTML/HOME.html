@@ -8,7 +8,7 @@
     </title>
   </head>
   <body>
-     <button onclick="setInterval(fontCycle(), 3000);">change</button>
+     <button onclick="fontCycle()">change</button>
     <div class="picture">
       <img src="/Users/cameron/github/BOYSOFCINEMA/ROOT/IMG/Entry page*.png" alt="NO PICTURE FOR YOU" width="414" height="271">
     </div>
@@ -26,7 +26,20 @@
 
     <script>
       function fontCycle() {
+        var == 0;
+        var == var + 1;
+        if (var = 1){
           document.getElementById("main").style.fontFamily = "impact";
+        }
+        else if (var = 2) {
+          document.getElementById("main").style.fontFamily = "Times new roman";
+        }
+        else if (var = 3) {
+          document.getElementById("main").style.fontFamily = "charcoal";
+        }
+        else {
+          var == 0;
+        }
       }
     </script>
   </body>
