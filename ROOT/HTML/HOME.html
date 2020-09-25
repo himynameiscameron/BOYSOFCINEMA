@@ -8,12 +8,12 @@
     </title>
   </head>
   <body>
-
+     <button onclick="setInterval(fontCycle(), 3000);">change</button>
     <div class="picture">
       <img src="/Users/cameron/github/BOYSOFCINEMA/ROOT/IMG/Entry page*.png" alt="NO PICTURE FOR YOU" width="414" height="271">
     </div>
-    <div>
-      <h1 fontFamily="monospace" onload="setInterval(fontCycle(), 3000)" id="main">
+    <div class="title">
+      <h1 fontFamily="monospace" id="main">
         BOYS OF CINEMA
       </h1>
     </div>
@@ -26,7 +26,7 @@
 
     <script>
       function fontCycle() {
-          document.getElementById("main").style.fontFamily = "Times";
+          document.getElementById("main").style.fontFamily = "impact";
       }
     </script>
   </body>
